@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="alert alert-primary p-5" role="alert">
+        <div class="row">
+
+            <div class="col-12">
+                <p class="display-3 font-weight-bold ">Food Delivery System</p>
+            </div>
+        </div>
+        <button class="btn btn-danger float-right">Login</button>
+    </div>
+    <div class="container">
+        <form>
+            <div class="form-group row">
+              <div class="col-11">
+                  <input type="search" class="form-control  border-primary" id='search' >
+              </div>  
+              <div class="col-1">
+                  <input type="button" class=" btn btn-primary" value="Search" id="searchBtn">
+              </div>
+              <div class="col-12">
+                  <small id="emailHelp" class="form-text text-muted">Search Restaurant's to order food in online.</small>
+              </div>
+            </div>
+        </form>
+        <!-- your orders  added dynamically-->
+        <div id="yourOrder">
+            <div class="alert alert-dark bg bg-danger" role="alert">
+                <div class="row ">
+
+                    <div class="col-6 pt-3">
+                        <p class="text-white font-weight-bold" id='order1'>Your Order</p>
+                    </div>
+                    <div class="col-6 text-right text-white">
+                        <div class="row">
+                            <div class="col-9 mx-0 px-0 justify-content-right">  
+                                <p class='font-weight-bold pt-3'id='order2'></p>
+                            </div>
+                            <div class="col-3 justify-content-left pt-2">
+                                <button class="btn btn-primary" id=showOrders>Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <div class="container" >
+        <div class="row justify-content-center" id='addFoodItems'>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
